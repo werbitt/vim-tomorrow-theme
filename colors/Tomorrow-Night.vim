@@ -343,6 +343,14 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
     call <SID>X("ShowMarksHLu", s:yellow, s:background, "none")
     call <SID>X("ShowMarksHLm", s:aqua, s:background, "none")
 
+  " Haskell Highlighting
+  call <SID>X("hs_hlFunctionName", s:red, "", "")
+  call <SID>X("hsType", s:blue, "", "")
+  call <SID>X("hsStructure", s:purple, "", "")
+  call <SID>X("hsModuleName", s:purple, "", "")
+  call <SID>X("hs_TypeOp", s:yellow, "", "")
+
+
 	" Delete Functions
 	delf <SID>X
 	delf <SID>rgb
